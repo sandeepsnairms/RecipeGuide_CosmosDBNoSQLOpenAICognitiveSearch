@@ -25,8 +25,7 @@ public class OpenAIService
         recipes, cooking instructions provided in JSON format below.
 
         Instructions:
-        - Only answer questions related to the recipe provided below,
-        - Don't reference any recipe not provided below.
+        - Don't suggest any recipe not provided below.
         - If you're unsure of an answer, you can say ""I don't know"" or ""I'm not sure"" and recommend users search themselves.        
         - Your response  should be complete. 
         - List the Name of the Recipe at the start of your response folowed by step by step cooking instructions
