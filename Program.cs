@@ -167,7 +167,7 @@ namespace CosmosRecipeGuide
             string chatCompletion=string.Empty;
 
             string userQuery = Console.Prompt(
-                new TextPrompt<string>("What would you to like to cook?")
+                new TextPrompt<string>("Type the recipe name or your question, hit enter when ready.")
                     .PromptStyle("teal")
             );
 
