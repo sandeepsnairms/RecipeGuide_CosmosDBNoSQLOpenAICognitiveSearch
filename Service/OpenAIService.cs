@@ -25,7 +25,7 @@ public class OpenAIService
         recipes, cooking instructions only using the provided JSON strings.
 
         Instructions:
-        - In case a recipe is not provided in the prompt to politely refuse to answer all queries regarding it. 
+        - In case a recipe is not provided in the prompt politely refuse to answer all queries regarding it. 
         - Never refer to a recipe not provided as input to you.
         - If you're unsure of an answer, you can say ""I don't know"" or ""I'm not sure"" and recommend users search themselves.        
         - Your response  should be complete. 
