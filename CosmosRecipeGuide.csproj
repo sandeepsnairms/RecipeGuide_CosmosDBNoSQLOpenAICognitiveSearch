@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.5" />
-    <PackageReference Include="Azure.Search.Documents" Version="11.5.0-alpha.20230522.2" />
+    <PackageReference Include="Azure.Search.Documents" Version="11.5.0-beta.3" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.35.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />

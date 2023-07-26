@@ -89,7 +89,7 @@ namespace CosmosRecipeGuide
         {
 
             // Perform the vector similarity search  
-            var vector = new SearchQueryVector { K = 3, Fields = "embedding", Value = queryEmbeddings.ToArray() };
+            var vector = new SearchQueryVector { KNearestNeighborsCount = 3, Fields = "embedding", Value = queryEmbeddings.ToArray() };
             var searchOptions = new SearchOptions
             {
                 Vector = vector,
@@ -158,7 +158,7 @@ namespace CosmosRecipeGuide
                 {
                     AlgorithmConfigurations =
                 {
-                    new VectorSearchAlgorithmConfiguration(vectorSearchConfigName, "hnsw")
+                    new HnswVectorSearchAlgorithmConfiguration(vectorSearchConfigName)
                 }
                 },
                 SemanticSettings = new()
@@ -185,7 +185,7 @@ namespace CosmosRecipeGuide
                 new SearchField("embedding", SearchFieldDataType.Collection(SearchFieldDataType.Single))
                 {
                     IsSearchable = true,
-                    Dimensions = 1536,
+                    VectorSearchDimensions = 1536,
                     VectorSearchConfiguration = vectorSearchConfigName
                 }
             }
